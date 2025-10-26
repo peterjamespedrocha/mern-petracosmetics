@@ -1,14 +1,16 @@
+// client/src/components/shopping-view/layout.jsx
 import { Outlet } from "react-router-dom";
-import ShoppingHeader from "./header";
+import Header from "./header";
+import Footer from "@/components/common/Footer"; // <-- IMPORT ITO
 
 function ShoppingLayout() {
   return (
-    <div className="flex flex-col bg-white overflow-hidden">
-      {/* common header */}
-      <ShoppingHeader />
-      <main className="flex flex-col w-full">
+    <div className="w-full">
+      <Header />
+      <main className="min-h-[calc(100vh-150px)]"> {/* Adjust min-height if needed based on header/footer size */}
         <Outlet />
       </main>
+      <Footer /> {/* <-- IDAGDAG ITO DITO */}
     </div>
   );
 }

@@ -22,6 +22,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import PaypalReturnPage from "./pages/shopping-view/paypal-return";
 import PaymentSuccessPage from "./pages/shopping-view/payment-success";
 import SearchProducts from "./pages/shopping-view/search";
+import AboutUs from "./pages/shopping-view/AboutUs"; // <-- New Import
+import ContactUs from "./pages/shopping-view/ContactUs"; // <-- New Import
 
 function App() {
   const { user, isAuthenticated, isLoading } = useSelector(
@@ -88,6 +90,8 @@ function App() {
           <Route path="paypal-return" element={<PaypalReturnPage />} />
           <Route path="payment-success" element={<PaymentSuccessPage />} />
           <Route path="search" element={<SearchProducts />} />
+          <Route path="/shop/about-us" element={<AboutUs />} />
+          <Route path="/shop/contact-us" element={<ContactUs />} />
         </Route>
         <Route path="/unauth-page" element={<UnauthPage />} />
         <Route path="*" element={<NotFound />} />
