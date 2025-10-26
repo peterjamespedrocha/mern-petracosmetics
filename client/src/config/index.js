@@ -127,6 +127,16 @@ export const shoppingViewHeaderMenuItems = [
     path: "/shop/listing",
   },
   {
+    id: "about",
+    label: "About",
+    path: "/shop/about-us",
+  },
+  {
+    id: "contact",
+    label: "Contact Us",
+    path: "/shop/contact-us",
+  },
+  {
     id: "search",
     label: "Search",
     path: "/shop/search",
@@ -142,7 +152,7 @@ export const categoryOptionsMap = {
 
 export const filterOptions = {
   Category: [
-    { id: "men", label: "Men Facial Care" },
+    { id: "men", label: "Mens Facial Care" },
     { id: "facial", label: "Facial Care" },
     { id: "hand", label: "Hand Care" },
     { id: "body", label: "Body Care" },
