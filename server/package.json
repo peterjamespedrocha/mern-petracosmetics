@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --recursive test",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
@@ -12,15 +12,18 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chai": "^6.2.0",
     "cloudinary": "^2.5.1",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
+    "mocha": "^11.7.4",
     "mongoose": "^8.7.1",
     "multer": "^1.4.5-lts.1",
     "nodemon": "^3.1.7",
-    "paypal-rest-sdk": "^1.8.1"
+    "paypal-rest-sdk": "^1.8.1",
+    "sinon": "^21.0.0"
   }
 }
