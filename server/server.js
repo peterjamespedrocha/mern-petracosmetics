@@ -19,8 +19,7 @@ const contactRouter = require("./routes/common/contact-routes");
 //create a database connection -> u can also
 //create a separate file for this and then import/use that file here
 
-mongoose
-  .connect(process.env.MONGO_URI || "mongodb+srv://jameskrt:12345@cluster0.usrmr.mongodb.net/") 
+mongoose.connect(process.env.MONGO_URI || "mongodb+srv://jameskrt:12345@cluster0.usrmr.mongodb.net/")
   .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
 
@@ -31,7 +30,9 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://mern-petracosmetics.vercel.app"
+      "https://mern-petracosmetics.vercel.app",
+      "mern-petracosmetics-jameskrts-projects.vercel.app",
+      
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
