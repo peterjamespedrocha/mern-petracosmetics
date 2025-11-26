@@ -202,3 +202,5 @@ export const addressFormControls = [
     placeholder: "Enter any additional notes",
   },
 ];
+
+export const backendUrl = import.meta.env.VITE_API_URL || "http://localhost:5000";
