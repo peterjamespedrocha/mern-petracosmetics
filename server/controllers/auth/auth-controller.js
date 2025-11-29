@@ -13,12 +13,11 @@ const registerUser = async (req, res) => {
         success: false,
         message: "User Already exists with the same email! Please try again",
       });
-
-    const hashPassword = await bcrypt.hash(password, 12);
+    
     const newUser = new User({
       userName,
       email,
-      password: hashPassword,
+      password,
     });
 
     await newUser.save();
