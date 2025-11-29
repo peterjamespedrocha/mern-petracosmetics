@@ -31,8 +31,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://mern-petracosmetics.vercel.app",
-      "mern-petracosmetics-jameskrts-projects.vercel.app",
-      
+      "https://mern-petracosmetics-jameskrts-projects.vercel.app",
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
