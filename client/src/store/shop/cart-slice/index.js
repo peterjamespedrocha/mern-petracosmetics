@@ -12,7 +12,7 @@ export const addToCart = createAsyncThunk(
   "cart/addToCart",
   async ({ userId, productId, quantity }) => {
     const response = await axios.post(
-      "${API_URL}/api/shop/cart/add",
+      `${API_URL}/api/shop/cart/add`,
       {
         userId,
         productId,
@@ -50,7 +50,7 @@ export const updateCartQuantity = createAsyncThunk(
   "cart/updateCartQuantity",
   async ({ userId, productId, quantity }) => {
     const response = await axios.put(
-      "${API_URL}/api/shop/cart/update-cart",
+      `${API_URL}/api/shop/cart/update-cart`,
       {
         userId,
         productId,
